@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дополнение Numbertext</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrapper">
+        <div class="brand">Числовой текст</div>
+        <nav class="nav">
+          <a href="#features">Возможности</a>
+          <a href="#how">Как использовать</a>
+          <a href="#cta">Установить</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="intro">
+        <div class="wrapper hero__content">
+          <div class="hero__icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" role="img" aria-labelledby="sheetsIcon">
+              <title id="sheetsIcon">Иконка Google Sheets</title>
+              <rect width="80" height="80" rx="16" fill="#2c8d4e" />
+              <path
+                d="M25 14h30a6 6 0 0 1 6 6v40H31a6 6 0 0 1-6-6V14Z"
+                fill="#35a857"
+              />
+              <rect x="31" y="24" width="24" height="4" rx="1.5" fill="#e7f2ea" />
+              <rect x="31" y="34" width="24" height="4" rx="1.5" fill="#e7f2ea" />
+              <rect x="31" y="44" width="24" height="4" rx="1.5" fill="#e7f2ea" />
+              <rect x="31" y="54" width="24" height="4" rx="1.5" fill="#e7f2ea" />
+            </svg>
+          </div>
+          <div class="hero__text">
+            <p class="hero__eyebrow">Дополнение</p>
+            <h1>ДОПОЛНЕНИЕ NUMBERTEXT</h1>
+            <p class="hero__subtitle">для электронных таблиц Google</p>
+            <div class="hero__description">
+              <p>
+                NUMBERTEXT преобразует числа в слова и поддерживает десятки языков.
+                Дополнение экономит время при подготовке отчетов и счетов.
+              </p>
+            </div>
+            <div class="hero__cta">
+              <a class="button button--primary" href="#cta">Установить</a>
+              <a class="button button--ghost" href="#how">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="how">
+        <div class="wrapper panel__layout">
+          <div class="panel__image">
+            <div class="sheet-mockup">
+              <div class="sheet-mockup__header"></div>
+              <div class="sheet-mockup__body">
+                <div class="sheet-mockup__sidebar"></div>
+                <div class="sheet-mockup__cells">
+                  <div class="sheet-row">
+                    <span class="sheet-cell sheet-cell--header">A</span>
+                    <span class="sheet-cell sheet-cell--header">B</span>
+                    <span class="sheet-cell sheet-cell--header">C</span>
+                    <span class="sheet-cell sheet-cell--header">D</span>
+                    <span class="sheet-cell sheet-cell--header">E</span>
+                    <span class="sheet-cell sheet-cell--header">F</span>
+                  </div>
+                  <div class="sheet-row">
+                    <span class="sheet-cell">1</span>
+                    <span class="sheet-cell">1250</span>
+                    <span class="sheet-cell sheet-cell--focus">=NUMBERTEXT(B2)</span>
+                    <span class="sheet-cell">одна тысяча двести пятьдесят</span>
+                    <span class="sheet-cell"></span>
+                    <span class="sheet-cell"></span>
+                  </div>
+                  <div class="sheet-row">
+                    <span class="sheet-cell">2</span>
+                    <span class="sheet-cell">49,99</span>
+                    <span class="sheet-cell">=MONEYTEXT(B3)</span>
+                    <span class="sheet-cell">сорок девять евро 99 центов</span>
+                    <span class="sheet-cell"></span>
+                    <span class="sheet-cell"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel__text">
+            <h2>Как это работает</h2>
+            <p>
+              После установки дополнение NUMBERTEXT появляется в меню "Расширения".
+              Выберите функцию в любой ячейке и получите записанное словами значение
+              числа без ошибок.
+            </p>
+            <div class="steps">
+              <div class="step">
+                <span class="step__icon">1</span>
+                <div>
+                  <h3>Откройте Google Таблицы</h3>
+                  <p>Перейдите в меню <strong>Расширения → NUMBERTEXT</strong>.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__icon">2</span>
+                <div>
+                  <h3>Выберите функцию</h3>
+                  <p>Используйте <strong>NUMBERTEXT</strong> или <strong>MONEYTEXT</strong> для преобразования.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__icon">3</span>
+                <div>
+                  <h3>Получите результат</h3>
+                  <p>Автоматически подставьте итог в шаблоны документов и счетов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="wrapper">
+          <h2>Что умеет NUMBERTEXT</h2>
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="6" width="36" height="36" rx="8" fill="#35a857" />
+                  <path d="M14 18h20v3H14zM14 24h20v3H14zM14 30h20v3H14z" fill="#fff" />
+                </svg>
+              </div>
+              <h3>Поддержка валют</h3>
+              <p>Перевод чисел в денежный формат в выбранной валюте без ручного ввода.</p>
+            </article>
+            <article class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="6" width="36" height="36" rx="8" fill="#2b7bd8" />
+                  <path
+                    d="M17 32.5 23 26l4 4 5-7 5 9H17z"
+                    fill="#fff"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Много языков</h3>
+              <p>Встроенные локализации для десятков языков и региональных форматов.</p>
+            </article>
+            <article class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="6" width="36" height="36" rx="8" fill="#fbbc04" />
+                  <path
+                    d="M18 32h12v3H18zM18 26h12v3H18zM18 20h12v3H18z"
+                    fill="#5f3800"
+                    opacity=".85"
+                  />
+                  <circle cx="24" cy="16" r="4" fill="#fff" />
+                </svg>
+              </div>
+              <h3>Удобные шаблоны</h3>
+              <p>Сохраняйте готовые формулы и применяйте их повторно в несколько кликов.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="wrapper cta__content">
+          <div>
+            <h2>Он работает в активной валюте!</h2>
+            <p>
+              Установите дополнение, чтобы автоматически формировать счета, акты и другие
+              документы с правильно записанными суммами.
+            </p>
+          </div>
+          <a class="button button--inverse" href="#intro">Установить бесплатно</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__content">
+        <span>© 2024 Numbertext.</span>
+        <div class="footer__links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Поддержка</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
